@@ -338,7 +338,7 @@ function setvhms(){
 }
 function Update(){
 	cd $tmpfile
-	links="http://kangle.cccyun.cn"
+	links="https://raw.githubusercontent.com/xcclycs/wj/refs/heads/main"
 	wget -q $links/config -O $files/config
 	wget -q $links/main.sh -O main.sh;
 	cp -f main.sh /usr/bin/kanglesh
@@ -729,7 +729,7 @@ function install_swoole()
 function install_ssh2()
 {
 	wget -q $DOWNLOAD_URL/lg/install_ver.h -O $files/iver
-	wget -q $DOWNLOAD_URL/sh/ssh2.sh -O ssh2.sh;sh ssh2.sh
+	wget -q $DOWNLOAD_URL/ -O ssh2.sh;sh ssh2.sh
 }
 function mysql_ini(){
 	cd $tmpfile
